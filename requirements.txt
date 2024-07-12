@@ -1,0 +1,15 @@
+langchain>=0.2.0
+langchain-community
+langchain_experimental
+langchain-openai
+langchain-anthropic
+langchain_chroma
+openai
+chromadb
+tiktoken
+python-dotenv
+streamlit
+streamlit-feedback
+st-chat-message
+unstructured
+unstructured[md]
