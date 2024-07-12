@@ -4,6 +4,7 @@ langchain_experimental
 langchain-openai
 langchain-anthropic
 langchain_chroma
+langchain-cli
 openai
 chromadb
 tiktoken
