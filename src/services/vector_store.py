@@ -5,7 +5,7 @@ from langchain_community.document_loaders.text import TextLoader
 from langchain_community.document_loaders import UnstructuredMarkdownLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_experimental.text_splitter import SemanticChunker
-from langchain.vectorstores import Chroma 
+from langchain_community.vectorstores import Chroma
 from langchain_openai.embeddings import OpenAIEmbeddings
 
 msg = st.toast("Loading documents...")
