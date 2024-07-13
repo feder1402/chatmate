@@ -10,11 +10,11 @@ def show_stats(response, elapsed_time, model):
     
     with col1:
         st.markdown("**Model:** " + model)
-    # with col2:
-    #     feedback = streamlit_feedback(
-    #         feedback_type="thumbs", 
-    #         optional_text_label="[Optional] Please, provide an explanation"
-    #         )            
+    with col2:
+        feedback = streamlit_feedback(
+            feedback_type="thumbs", 
+            optional_text_label="[Optional] Please, provide an explanation"
+            )            
     with st.expander("Prompt", expanded=False):
         st.write(response["prompt"][0].content)
     with st.expander("Sources", expanded=False):

@@ -1,7 +1,7 @@
 import streamlit as st
 import time
 
-from st_chat_message import message
+# from st_chat_message import message
 
 from src. services.llms_chat import get_response
 from src.components.stats import show_stats
@@ -9,6 +9,20 @@ from src.components.stats import show_stats
 # Hack to right-align user messages
 
 thread = [{"role": "assistant", "content": "How can I help you?"}]  
+
+def message(content, is_user=False, key=None):
+    if is_user:
+        st.write(
+            f'<div style="text-align:right; padding: 5px 10px;">{"😎 " + content}</div>',
+            unsafe_allow_html=True,
+            key=key,
+        )
+    else:
+        st.write(
+            f'<div style="text-align:left; padding: 5px 10px;">{"🧉 " + content}</div>',
+            unsafe_allow_html=True,
+            key=key,
+        )
  
 def render_message(msg):
     message(msg["content"], is_user=msg["role"] == "user", key=str(time.time()))
