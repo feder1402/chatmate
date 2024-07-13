@@ -8,7 +8,7 @@ QUERIES = [
     "What are the key things to know about LegalShield?",
     "What is LegalShield story?",
     "What are the benefits of being an associate?",
-    "Who is Darnell?",
+    "What is Darnell story?",
     "What is the capital of Argentina?"
 ]
 

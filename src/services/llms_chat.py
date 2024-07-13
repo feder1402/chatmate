@@ -26,7 +26,7 @@ def get_prompt(instructions, scoped_answer, use_markdown, context):
         + TRANSPARENT_CONTEXT \
         + (SCOPED_PROMPT if scoped_answer else "") \
         + (USE_MARKDOWN_PROMPT if use_markdown else "") \
-        + "\nContext:\n" + context 
+        + "\n\n<context>\n\n" + context + "\n\n</context>\n\n"
     prompt = ChatPromptTemplate.from_messages(
         [
             SystemMessage(content=content),

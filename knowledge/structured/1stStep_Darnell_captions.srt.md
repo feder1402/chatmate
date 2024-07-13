@@ -55,11 +55,3 @@ What does that mean? That means that if I take a vacation to Europe for a month,
 ## Compensation and Additional Resources
 
 Obviously, that's important because we're marketing services that add immense value to the lives of others. Our compensation is more about how we get paid. There are additional videos you can click on, and if you're like me, because I wanted this to happen faster rather than slower, I said, "Hey look, I'm willing to learn as much as I can, but it's not going to get in the way of me getting paid as fast as I can." So yes, learn, but earn at the exact same time.
-
-## Conclusion
-
-I can't wait to hear your testimony. Again, welcome to the PPLSI family, and I'm looking forward to hearing about your success.
-
----
-
-I will save this structured content in a markdown document named `1stStep_Darnell_captions.md`. Please let me know if you would like to review this before proceeding with the other files or if I should continue processing the next file.

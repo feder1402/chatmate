@@ -17,7 +17,7 @@ def show_stats(response, elapsed_time, model):
             )            
     with st.expander("Prompt", expanded=False):
         st.write(response["prompt"][0].content)
-    with st.expander("Retriever", expanded=False):
+    with st.expander("Sources", expanded=False):
         retrieved_docs = []
         for doc, score in response["docs_with_scores"]:
             retrieved_docs.append({"source": doc.metadata["source"], "score": f'{score:0.2f}', "Length": len(doc.page_content), "content": doc.page_content})

@@ -6,6 +6,8 @@ from st_chat_message import message
 from src. services.llms_chat import get_response
 from src.components.stats import show_stats
 
+# Hack to right-align user messages
+
 thread = [{"role": "assistant", "content": "How can I help you?"}]  
  
 def render_message(msg):

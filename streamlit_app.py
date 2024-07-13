@@ -1,13 +1,16 @@
 import streamlit as st
 
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+# __import__('pysqlite3')
+# import sys
+# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 st.set_page_config(layout="wide")
 
 if "saved_query" not in st.session_state:
     st.session_state["saved_query"] = None
+    
+if "vector_store" not in st.session_state:
+    st.session_state["vector_store"] = None
     
 st.session_state["DocumentsPath"] = "knowledge/structured"
 
@@ -15,10 +18,14 @@ st.session_state["DocumentsPath"] = "knowledge/structured"
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv()) # read local .env file
 
+from src.services.vector_store import load_documents
 from src.components.options.select_model import select_model
 from src.components.options.prompt_options import prompt_options
 from src.components.options.saved_queries import render_saved_queries
 from src.components.chatbox import chatbox
+
+KnowledgeDirectoryPath = st.session_state["DocumentsPath"]
+st.session_state["vector_store"] = load_documents(KnowledgeDirectoryPath)
 
 # Render UI
 with st.sidebar:

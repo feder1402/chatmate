@@ -1,6 +1,7 @@
 .venv/ 
 .env
 log.txt
+chroma/
 ########################################################################
 # Python - https://github.com/github/gitignore/blob/master/Python.gitignore
 ########################################################################
