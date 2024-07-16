@@ -31,6 +31,10 @@ from src.components.chatbox import chatbox
 KnowledgeDirectoryPath = st.session_state["DocumentsPath"]
 st.session_state["vector_store"] = load_documents(KnowledgeDirectoryPath)
 
+def refresh_docs():
+    st.session_state["vector_store"] = load_documents(KnowledgeDirectoryPath, force_refresh=True)
+    st.write("Documents refreshed.")
+
 # Render UI
 with st.sidebar:
     with st.expander("**Model**", icon="🤖", expanded=True):
@@ -39,6 +43,7 @@ with st.sidebar:
         instructions, scoped_answer, use_markdown, temperature = prompt_options()
     with st.expander("**Documents**", icon="📁"):
         st.write("**Path:** " + st.session_state["DocumentsPath"])
+        st.button("Refresh", on_click=lambda: refresh_docs())
     with st.expander("**Saved Queries**", icon="❓"):
         render_saved_queries()   
  

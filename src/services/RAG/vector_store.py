@@ -10,27 +10,24 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
 from langchain_openai.embeddings import OpenAIEmbeddings
      
-@st.cache_resource
-def load_documents(knowledgeDirectoryPath):
-    # st.write("Loading documents...")
-    loader = DirectoryLoader(knowledgeDirectoryPath, glob="**/*.*", loader_cls=TextLoader) 
-    loaded_docs = loader.load() 
-
-    embeddings = OpenAIEmbeddings(model="text-embedding-3-large") 
-    #embeddings = SentenceTransformerEmbeddings(model_name="multi-qa-mpnet-base-cos-v1")
-
-    # st.write("Splitting documents...")
-    splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100) 
-    #splitter = SemanticChunker(embeddings)
-    chunks = splitter.split_documents(loaded_docs) 
-
-    # st.write("Creating embeddings...")
+#@st.cache_resource
+def load_documents(knowledgeDirectoryPath, force_refresh=False):
     persistent_client = chromadb.PersistentClient()
     collection_name = knowledgeDirectoryPath.replace("/", "_")
-    collection = persistent_client.get_or_create_collection(
-        name=collection_name,
-        metadata={"hnsw:space": "cosine"}
+    collection = None
+    if force_refresh:
+        persistent_client.delete_collection(collection_name)
+        collection = persistent_client.create_collection(
+            name=collection_name,
+            metadata={"hnsw:space": "cosine"}
         )
+    else:
+        collection = persistent_client.get_or_create_collection(
+            name=collection_name,
+            metadata={"hnsw:space": "cosine"}
+        )
+
+    embeddings = OpenAIEmbeddings(model="text-embedding-3-large") 
 
     vector_store = Chroma(
         client=persistent_client,
@@ -39,8 +36,19 @@ def load_documents(knowledgeDirectoryPath):
     )
     
     if collection.count() == 0:
-        vector_store.add_documents(chunks)
+        loader = DirectoryLoader(knowledgeDirectoryPath, glob="**/*.*", loader_cls=TextLoader) 
+        loaded_docs = loader.load() 
+
+        splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100) 
+        #splitter = SemanticChunker(embeddings)
+
+        chunks = splitter.split_documents(loaded_docs) 
     
+        vector_store.add_documents(
+            documents=chunks, 
+            collection_name=collection_name
+        )
+
     return vector_store
 
 def retrieve_docs(query):
