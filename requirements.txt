@@ -15,3 +15,4 @@ datasets
 ragas
 streamlit
 streamlit-feedback
+streamlit-extras

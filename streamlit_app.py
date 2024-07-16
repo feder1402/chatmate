@@ -22,7 +22,7 @@ st.session_state["DocumentsPath"] = "knowledge/structured"
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv()) # read local .env file
 
-from src.services.vector_store import load_documents
+from src.services.RAG.vector_store import load_documents
 from src.components.options.select_model import select_model
 from src.components.options.prompt_options import prompt_options
 from src.components.options.saved_queries import render_saved_queries
@@ -33,7 +33,6 @@ st.session_state["vector_store"] = load_documents(KnowledgeDirectoryPath)
 
 # Render UI
 with st.sidebar:
-    st.markdown("# 🧉 ChatMate")
     with st.expander("**Model**", icon="🤖", expanded=True):
         modelfamily, model = select_model()
     with st.expander("**Prompt**", icon="🎓"):

@@ -4,7 +4,7 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage, SystemMessage
 
-from src.services.vector_store import retrieve_docs
+from src.services.RAG.vector_store import retrieve_docs
 
 SCOPED_PROMPT = """
 If the answer to the user's question is not contained in the provided context, answer 🤷.
