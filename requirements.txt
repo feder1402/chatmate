@@ -7,8 +7,11 @@ langchain_chroma
 langchain-cli
 openai
 chromadb
-pysqlite3-binary
+pysqlite3-binary; sys_platform == 'linux'
 tiktoken
 python-dotenv
+pandas
+datasets
+ragas
 streamlit
 streamlit-feedback

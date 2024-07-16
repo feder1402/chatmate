@@ -40,17 +40,13 @@ def load_documents(knowledgeDirectoryPath):
     
     if collection.count() == 0:
         vector_store.add_documents(chunks)
-
- #   vector_store = Chroma.from_documents(chunks, embeddings, {"hnsw:space": "cosine"})
-
-    # st.write(":sunglasses: Done loading documents: ", state="complete")
     
     return vector_store
 
 def retrieve_docs(query):
     vector_store = st.session_state["vector_store"]
     # Get documents similar to the query ith their scores
-    docs_and_score = vector_store.similarity_search_with_score(query, k=3)
+    docs_and_score = vector_store.similarity_search_with_score(query)
     
     # Remove duplicates and unrelated documents
     unique_docs = []

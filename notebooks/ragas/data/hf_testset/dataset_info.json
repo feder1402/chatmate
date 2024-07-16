@@ -1,0 +1,43 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "contexts": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "ground_truth": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "evolution_type": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "metadata": [
+      {
+        "filename": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "source": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      }
+    ],
+    "episode_done": {
+      "dtype": "bool",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

@@ -1,8 +1,12 @@
 import streamlit as st
+import platform
 
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+current_platform = platform.system()
+
+if current_platform == "Linux":
+    __import__('pysqlite3')
+    import sys
+    sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 st.set_page_config(layout="wide")
 
