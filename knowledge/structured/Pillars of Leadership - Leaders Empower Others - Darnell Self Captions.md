@@ -1,4 +1,4 @@
-# File 5: Pillars of Leadership - Leaders Empower Others - Darnell Self Captions
+# Pillars of Leadership - Leaders Empower Others - Darnell Self
 
 ## Introduction: Leadership and Empowerment
 Tonight, I have the opportunity to share a little about leading and empowering others. This event is about becoming better leaders, which makes everything around us better.

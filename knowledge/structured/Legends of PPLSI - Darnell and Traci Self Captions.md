@@ -1,6 +1,6 @@
-# File 4: Legends of PPLSI - Darnell and Traci Self Captions
+# Legends of PPLSI - Darnell and Traci Story
 
-cIntroduction: Entrepreneurial Journey
+## Introduction: Entrepreneurial Journey
 Once we decided to be entrepreneurs, it was not a cakewalk from there. We're from the Washington DC, Maryland area. My father drove the Metro Bus, and my mother worked for the government. We didn't have a lot of money, so I worked retail all through college to make extra money.
 
 ## Meeting Traci

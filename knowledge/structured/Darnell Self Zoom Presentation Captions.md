@@ -1,6 +1,4 @@
-# File 3: Darnell Self Zoom Presentation Captions.txt
-
----
+# Darnell Self Zoom Presentation: What to do in your first 48 hours as an associate
 
 ## Introduction: Welcome
 

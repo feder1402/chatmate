@@ -1,4 +1,4 @@
-# File 2: Darnell Self Keynote Oppty Captions.txt
+# Darnell Self Keynote
 
 ## Introduction: It's Up to Me
 The name of my talk is "It's Up to Me." That's because it is up to you. You can't count on anybody else. You could blame a lot of people, but it's up to you.

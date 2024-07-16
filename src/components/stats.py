@@ -16,15 +16,13 @@ def show_stats(response, elapsed_time, model):
             optional_text_label="[Optional] Please, provide an explanation"
             )            
     #with st.expander("Stats", expanded=False):
-    with st.popover("more...", help="Show prompt sent and sources retrieved"):
-        tab1, tab2 = st.tabs(["Prompt", "Sources"])
-
+    with st.popover("more cool stuff...", help="Show prompt sent and sources retrieved"):
+        tab1, tab2 = st.tabs(["Sources", "Prompt"])
         with tab1:
-            with st.container(height=400, border=False):
-                st.write(response["prompt"][0].content)
-
-        with tab2:
             retrieved_docs = []
             for doc, score in response["docs_with_scores"]:
                 retrieved_docs.append({"source": doc.metadata["source"], "score": f'{score:0.2f}', "Length": len(doc.page_content), "content": doc.page_content})
             st.dataframe(retrieved_docs, use_container_width=True)
+        with tab2:
+            with st.container(height=400, border=False):
+                st.write(response["prompt"][0].content)
