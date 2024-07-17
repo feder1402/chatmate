@@ -10,22 +10,18 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
 from langchain_openai.embeddings import OpenAIEmbeddings
      
-#@st.cache_resource
+#@st.cache_resource(show_spinner=True)
 def load_documents(knowledgeDirectoryPath, force_refresh=False):
     persistent_client = chromadb.PersistentClient()
     collection_name = knowledgeDirectoryPath.replace("/", "_")
-    collection = None
+
     if force_refresh:
         persistent_client.delete_collection(collection_name)
-        collection = persistent_client.create_collection(
-            name=collection_name,
-            metadata={"hnsw:space": "cosine"}
-        )
-    else:
-        collection = persistent_client.get_or_create_collection(
-            name=collection_name,
-            metadata={"hnsw:space": "cosine"}
-        )
+
+    collection = persistent_client.get_or_create_collection(
+        name=collection_name,
+        metadata={"hnsw:space": "cosine"}
+    )
 
     embeddings = OpenAIEmbeddings(model="text-embedding-3-large") 
 

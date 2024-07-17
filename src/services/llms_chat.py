@@ -21,11 +21,16 @@ TRANSPARENT_CONTEXT = """
 Do not mention the context in your answer.
 """
 
-def get_prompt(instructions, scoped_answer, use_markdown, context):
-    content = instructions \
+def get_fullInstructions(instructions, scoped_answer, use_markdown):
+    full_instructions = instructions \
         + TRANSPARENT_CONTEXT \
         + (SCOPED_PROMPT if scoped_answer else "") \
-        + (USE_MARKDOWN_PROMPT if use_markdown else "") \
+        + (USE_MARKDOWN_PROMPT if use_markdown else "")
+    return full_instructions
+
+def get_prompt(instructions, scoped_answer, use_markdown, context):
+    full_instructions = get_fullInstructions(instructions, scoped_answer, use_markdown)
+    content = full_instructions \
         + "\n\n<context>\n\n" + context + "\n\n</context>\n\n"
     prompt = ChatPromptTemplate.from_messages(
         [
@@ -48,8 +53,9 @@ def get_response(query, modelfamily, model, instructions, scoped_answer, use_mar
     return {
         "content": response.content,
         "docs_with_scores": docs_with_scores,
+        "context": context,
         "metadata": metadata,
-        "prompt": prompt,
+        "instructions": get_fullInstructions(instructions, scoped_answer, use_markdown),
         }
     
 def get_client(model_family, model, temperature):

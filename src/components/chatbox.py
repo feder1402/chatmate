@@ -12,14 +12,12 @@ def message(content, is_user=False, key=None):
     if is_user:
         st.write(
             f'<div style="text-align:right; padding: 5px 10px;">{"😎 " + content}</div>',
-            unsafe_allow_html=True,
-            key=key,
+            unsafe_allow_html=True
         )
     else:
         st.write(
             f'<div style="text-align:left; padding: 5px 10px;">{"🧉 " + content}</div>',
-            unsafe_allow_html=True,
-            key=key,
+            unsafe_allow_html=True
         )
  
 def render_message(msg_list):
@@ -37,14 +35,14 @@ def chatbox(modelfamily, model, instructions, scoped_answer, use_markdown, tempe
         color_name="violet-70",
     )
     # If new user message submitted, send it to the assistant
-    if prompt := st.chat_input() or st.session_state["saved_query"]:
-        prompt_msg = {"role": "user", "content": prompt}
+    if query := st.chat_input() or st.session_state["saved_query"]:
+        prompt_msg = {"role": "user", "content": query}
         render_message([prompt_msg])
         thread.append(prompt_msg)
         
         with st.spinner("Thinking..."):
             start_time = time.time()
-            response = get_response(prompt, modelfamily, model, instructions, scoped_answer, use_markdown, temperature)
+            response = get_response(query, modelfamily, model, instructions, scoped_answer, use_markdown, temperature)
             elapsed_time = time.time() - start_time
             
         thread.append({"role": "assistant", "content": response["content"], "elapsed_time": elapsed_time})
@@ -52,5 +50,5 @@ def chatbox(modelfamily, model, instructions, scoped_answer, use_markdown, tempe
         response_msg = {"role": "assistant", "content": response["content"]}
         render_message([response_msg])
 
-        show_stats(response, elapsed_time, model)
+        show_stats(response, elapsed_time, model, query)
         
