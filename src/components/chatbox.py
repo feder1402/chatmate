@@ -4,7 +4,7 @@ import time
 from streamlit_extras.colored_header import colored_header
 
 from src. services.llms_chat import get_response
-from src.components.stats import show_stats
+from src.components.stats.stats import show_stats
 
 thread = []  
 
