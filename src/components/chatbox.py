@@ -31,7 +31,7 @@ def render_message(msg_list):
 def chatbox(modelfamily, model, instructions, scoped_answer, use_markdown, temperature):
     colored_header(
         label="🧉 ChatMate",
-        description="Ask me anything about what I know!",
+        description="Whereof one cannot speak clearly, thereof one must be silent",
         color_name="violet-70",
     )
     # If new user message submitted, send it to the assistant

@@ -44,7 +44,7 @@ def load_documents(knowledgeDirectoryPath, force_refresh=False):
             documents=chunks, 
             collection_name=collection_name
         )
-
+        
     return vector_store
 
 def retrieve_docs(query):

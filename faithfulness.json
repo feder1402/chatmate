@@ -1,47 +1,69 @@
+```
 [
     {
-        "statement": "To become a LegalShield associate, you typically need three customers and one business partner.",
-        "reason": "The context mentions that to get fast start qualified, you need three customers and one business partner. However, it does not explicitly state that this is the requirement to become a LegalShield associate.",
+        "statement": "Take advantage of the resources available in your back office.",
+        "reason": "The context mentions gaining access to resources in the back office for information and education.",
+        "verdict": 1
+    },
+    {
+        "statement": "Keep educating yourself to enhance your competence and confidence in the business.",
+        "reason": "The context emphasizes continuous learning and gaining information and education.",
+        "verdict": 1
+    },
+    {
+        "statement": "Continue attending local events and virtual meetings to stay connected with successful associates.",
+        "reason": "The context mentions attending events and getting around successful associates for learning.",
+        "verdict": 1
+    },
+    {
+        "statement": "Proximity to successful individuals can be powerful in your growth journey.",
+        "reason": "The context mentions getting around successful associates for learning and growth.",
+        "verdict": 1
+    },
+    {
+        "statement": "Consider mentoring newer associates.",
+        "reason": "There is no explicit mention of mentoring newer associates in the context.",
         "verdict": 0
     },
     {
-        "statement": "One of those customers might become an associate.",
-        "reason": "The context does not mention that one of the customers might become an associate. It focuses on getting fast start qualified and having customers and a business partner.",
+        "statement": "Sharing your experience and knowledge can not only help newer associates but also reinforce your own understanding and skills.",
+        "reason": "There is no explicit mention of sharing experience and knowledge in the context.",
         "verdict": 0
     },
     {
-        "statement": "This can increase your belief level as you achieve your first rank and get paid.",
-        "reason": "The context does not mention anything about belief level or achieving ranks. It focuses on getting fast start qualified and earning bonuses.",
+        "statement": "Challenge yourself with new goals and targets.",
+        "reason": "There is no explicit mention of challenging oneself with new goals and targets in the context.",
         "verdict": 0
     },
     {
-        "statement": "Gain access to as much information as fast as you can.",
-        "reason": "The context mentions accessing information but does not specify the speed at which it should be done.",
+        "statement": "Setting higher benchmarks can push you to strive for more and keep growing in your business.",
+        "reason": "There is no explicit mention of setting higher benchmarks in the context.",
         "verdict": 0
     },
     {
-        "statement": "There are several videos available that can guide you on how to launch your business, structure it, and answer any questions you may have.",
-        "reason": "The context mentions videos that provide guidance on launching a business, structuring it, and answering questions. Therefore, it can be inferred that there are videos available for these purposes.",
-        "verdict": 1
+        "statement": "Expand your network within the company and outside.",
+        "reason": "There is no explicit mention of expanding the network within the company and outside in the context.",
+        "verdict": 0
     },
     {
-        "statement": "Utilize three-way calls to get expert help in answering questions.",
-        "reason": "The context suggests using three-way calls to get expert help in answering questions. Therefore, it can be inferred that utilizing three-way calls is recommended.",
-        "verdict": 1
+        "statement": "Focus on developing your leadership skills.",
+        "reason": "There is no explicit mention of focusing on developing leadership skills in the context.",
+        "verdict": 0
     },
     {
-        "statement": "This way, you can learn while your prospect gets the answers they need.",
-        "reason": "The context mentions using three-way calls to learn while prospects get answers. Therefore, it can be inferred that this approach facilitates learning.",
-        "verdict": 1
+        "statement": "Explore new strategies and approaches in your business.",
+        "reason": "There is no explicit mention of exploring new strategies and approaches in the context.",
+        "verdict": 0
     },
     {
-        "statement": "Take advantage of the resources available in your back office for continuous learning.",
-        "reason": "The context advises gaining information and education from resources in the back office for continuous learning. Therefore, it can be inferred that utilizing these resources is recommended for continuous learning.",
-        "verdict": 1
+        "statement": "Being open to innovation and adaptation can help you stay ahead in a constantly evolving market.",
+        "reason": "There is no explicit mention of being open to innovation and adaptation in the context.",
+        "verdict": 0
     },
     {
-        "statement": "By gaining information and education, you can become more competent and confident in your role as a LegalShield associate.",
-        "reason": "The context suggests that gaining information and education can lead to becoming more competent and confident. Therefore, it can be inferred that this process can enhance one's role as a LegalShield associate.",
-        "verdict": 1
+        "statement": "Celebrate your milestones and achievements.",
+        "reason": "There is no explicit mention of celebrating milestones and achievements in the context.",
+        "verdict": 0
     }
 ]
+```

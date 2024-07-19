@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 
 from streamlit_feedback import streamlit_feedback
 
@@ -29,7 +30,7 @@ def show_stats(response, elapsed_time, model, query):
             with tab1:
                 retrieved_docs = []
                 for doc, score in response["docs_with_scores"]:
-                    retrieved_docs.append({"source": doc.metadata["source"], "score": f'{score:0.2f}', "size": len(doc.page_content), "content": doc.page_content})
+                    retrieved_docs.append({"score": f'{score:0.2f}', "source": os.path.basename(doc.metadata["source"]), "size": len(doc.page_content), "content": doc.page_content})
                 st.dataframe(retrieved_docs, use_container_width=True)
             with tab2:
                 st.write(response["instructions"])
