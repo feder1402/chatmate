@@ -62,8 +62,13 @@ with st.sidebar:
         col1, col2, col3 = st.columns([2, 3, 3])
         col2.button("Chunks", on_click=lambda: show_chunks())       
         col3.button("Reload", on_click=lambda: refresh_docs(True))
+    with st.expander("Semantic caching", icon="🔍"):
+        use_cache = st.toggle("Use semantic cache", value=True)
+        similarity_threshold = 1.0
+        if use_cache:
+            similarity_threshold = st.slider("Similarity threshold", 0, 1, value=0.8, help="Minimum similarity to consider it a match. Lower values will return more results; 1.0 means exact match")           
     with st.expander("**Saved Queries**", icon="❓"):
         render_saved_queries()   
  
-chatbox(modelfamily, model, instructions, scoped_answer, use_markdown, temperature)  
+chatbox(modelfamily, model, instructions, scoped_answer, use_markdown, temperature, use_cache, similarity_threshold)  
     

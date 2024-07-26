@@ -6,7 +6,6 @@ langchain-anthropic
 langchain_chroma
 langchain-cli
 openai
-chromadb
 pysqlite3-binary; sys_platform == 'linux'
 tiktoken
 python-dotenv
@@ -16,3 +15,4 @@ ragas
 streamlit
 streamlit-feedback
 streamlit-extras
+faiss-cpu

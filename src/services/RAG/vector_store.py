@@ -6,7 +6,7 @@ from langchain_community.document_loaders import DirectoryLoader
 from langchain_community.document_loaders.text import TextLoader 
 from langchain_experimental.text_splitter import SemanticChunker
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
 from langchain_openai.embeddings import OpenAIEmbeddings
      
@@ -23,7 +23,7 @@ def load_documents(knowledgeDirectoryPath, force_refresh=False):
         metadata={"hnsw:space": "cosine"}
     )
 
-    embeddings = OpenAIEmbeddings(model="text-embedding-3-large") 
+    embeddings = OpenAIEmbeddings(model="text-embedding-3-small") 
 
     vector_store = Chroma(
         client=persistent_client,

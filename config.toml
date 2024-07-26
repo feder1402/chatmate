@@ -1,2 +1,0 @@
-[server]
-pre-run = "setup.sh"

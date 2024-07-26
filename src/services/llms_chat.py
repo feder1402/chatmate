@@ -4,6 +4,7 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage, SystemMessage
 
+from src.services.semantic_cache import retrieve_from_cache, store_in_cache
 from src.services.RAG.vector_store import retrieve_docs
 
 SCOPED_PROMPT = """
@@ -40,7 +41,13 @@ def get_prompt(instructions, scoped_answer, use_markdown, context):
     )
     return prompt
 
-def get_response(query, modelfamily, model, instructions, scoped_answer, use_markdown, temperature):    
+def get_response(query, modelfamily, model, instructions, scoped_answer, use_markdown, temperature, use_cache, similarity_threshold):    
+    if use_cache:
+        cached, similarity = retrieve_from_cache(query, similarity_threshold)
+        if cached is not None:
+            cached["cached"] = True
+            cached["similarity"] = similarity
+            return cached
     client = get_client(modelfamily, model, temperature)
     context, docs_with_scores = retrieve_docs(query)
     prompt = get_prompt(instructions, scoped_answer, use_markdown, context)
@@ -50,14 +57,21 @@ def get_response(query, modelfamily, model, instructions, scoped_answer, use_mar
     
     metadata = get_metadata(modelfamily, model, response)
     
-    return {
+    response =  {
         "content": response.content,
+        "cached": False,
+        "query": query,
         "docs_with_scores": docs_with_scores,
         "context": context,
         "metadata": metadata,
         "instructions": get_fullInstructions(instructions, scoped_answer, use_markdown),
         }
     
+    if use_cache:
+        store_in_cache(query, response)    
+        
+    return response
+
 def get_client(model_family, model, temperature):
     if model_family == "openai":
         from langchain_openai import ChatOpenAI
