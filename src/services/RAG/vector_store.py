@@ -9,11 +9,13 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
 from langchain_openai.embeddings import OpenAIEmbeddings
-     
+  
+EMBEDDING_MODEL = "text-embedding-3-small"
+  
 #@st.cache_resource(show_spinner=True)
 def load_documents(knowledgeDirectoryPath, force_refresh=False):
     persistent_client = chromadb.PersistentClient()
-    collection_name = knowledgeDirectoryPath.replace("/", "_")
+    collection_name = knowledgeDirectoryPath.replace("/", "_") + "_" + EMBEDDING_MODEL
 
     if force_refresh:
         persistent_client.delete_collection(collection_name)
@@ -23,7 +25,7 @@ def load_documents(knowledgeDirectoryPath, force_refresh=False):
         metadata={"hnsw:space": "cosine"}
     )
 
-    embeddings = OpenAIEmbeddings(model="text-embedding-3-small") 
+    embeddings = OpenAIEmbeddings(model=EMBEDDING_MODEL) 
 
     vector_store = Chroma(
         client=persistent_client,
