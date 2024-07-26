@@ -66,7 +66,7 @@ with st.sidebar:
         use_cache = st.toggle("Use semantic cache", value=True)
         similarity_threshold = 1.0
         if use_cache:
-            similarity_threshold = st.slider("Similarity threshold", 0, 1, value=0.8, help="Minimum similarity to consider it a match. Lower values will return more results; 1.0 means exact match")           
+            similarity_threshold = st.slider("Similarity threshold", 0.0, 1.0, value=0.8, help="Minimum similarity to consider it a match. Lower values will return more results; 1.0 means exact match")           
     with st.expander("**Saved Queries**", icon="❓"):
         render_saved_queries()   
  
