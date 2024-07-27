@@ -8,7 +8,7 @@ model_list = {
 model_families = [k for k, _ in model_list.items()]
 default_ndx = model_families.index("openai")
 
-@st.experimental_fragment
+@st.fragment
 def prompt_options():
     instructions = st.text_area("instructions")
     scoped_answer = st.toggle("Scope answer to context", True, help="Adds 'If the answer to the user's question is not contained in the provided context, answer 🤷.' to the instructions")

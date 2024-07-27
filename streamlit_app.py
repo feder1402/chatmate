@@ -34,7 +34,7 @@ def refresh_docs(force_refresh=False):
     st.session_state["vector_store"] = load_documents(KnowledgeDirectoryPath, force_refresh=force_refresh)
     st.toast("Documents refreshed.", icon=":material/thumb_up:")
 
-@st.experimental_dialog("Chunks", width="large")
+@st.dialog("Chunks", width="large")
 def show_chunks():   
     vector_store = st.session_state["vector_store"]
     chunks = vector_store.get()
