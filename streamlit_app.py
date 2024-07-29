@@ -14,6 +14,9 @@ st.set_page_config(layout="wide")
 
 if "saved_query" not in st.session_state:
     st.session_state["saved_query"] = None
+    
+if "retrieval_score_threshold" not in st.session_state:
+    st.session_state["retrieval_score_threshold"] = None
       
 st.session_state["DocumentsPath"] = "knowledge/structured"
 
@@ -28,7 +31,6 @@ from src.components.options.saved_queries import render_saved_queries
 from src.components.chatbox import chatbox
 
 KnowledgeDirectoryPath = st.session_state["DocumentsPath"]
-#st.session_state["vector_store"] = load_documents(KnowledgeDirectoryPath)
 
 def refresh_docs(force_refresh=False):
     st.session_state["vector_store"] = load_documents(KnowledgeDirectoryPath, force_refresh=force_refresh)
@@ -59,11 +61,12 @@ with st.sidebar:
         instructions, scoped_answer, use_markdown, temperature = prompt_options()
     with st.expander("**Documents**", icon="📁"):
         st.write("**Path:** " + st.session_state["DocumentsPath"])
+        st.session_state["retrieval_score_threshold"] = st.slider("Retrieval score threshold", 0.0, 1.0, value=0.6, help="Maximum score to consider a document relevant during retrieval. Zero means most relevant.")
         col1, col2, col3 = st.columns([2, 3, 3])
         col2.button("Chunks", on_click=lambda: show_chunks())       
         col3.button("Reload", on_click=lambda: refresh_docs(True))
     with st.expander("Semantic caching", icon="🔍"):
-        use_cache = st.toggle("Use semantic cache", value=True)
+        use_cache = st.toggle("Use semantic cache", value=False, help="Use semantic cache to speed up the search")
         similarity_threshold = 1.0
         if use_cache:
             similarity_threshold = st.slider("Similarity threshold", 0.0, 1.0, value=0.8, help="Minimum similarity to consider it a match. Lower values will return more results; 1.0 means exact match")           

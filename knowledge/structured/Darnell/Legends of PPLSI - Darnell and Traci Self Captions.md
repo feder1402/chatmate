@@ -1,5 +1,7 @@
 # Legends of PPLSI - Darnell and Traci Story
 
+This tells Darnell and Traci Self story, from humble beggining to became successful entrepreneurs. It covers their early struggles, their belief and faith, their gratefulness and humility, and their commitment to empowering others.
+
 ## Introduction: Entrepreneurial Journey
 Once we decided to be entrepreneurs, it was not a cakewalk from there. We're from the Washington DC, Maryland area. My father drove the Metro Bus, and my mother worked for the government. We didn't have a lot of money, so I worked retail all through college to make extra money.
 

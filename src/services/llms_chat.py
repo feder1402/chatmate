@@ -7,6 +7,10 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from src.services.semantic_cache import retrieve_from_cache, store_in_cache
 from src.services.RAG.vector_store import retrieve_docs
 
+USE_CONTEXT_PROMPT = """
+Answer the user question using the information in the <context> below.
+"""
+
 SCOPED_PROMPT = """
 If the answer to the user's question is not contained in the provided context, answer 🤷.
 """
@@ -24,6 +28,7 @@ Do not mention the context in your answer.
 
 def get_fullInstructions(instructions, scoped_answer, use_markdown):
     full_instructions = instructions \
+        + USE_CONTEXT_PROMPT \
         + TRANSPARENT_CONTEXT \
         + (SCOPED_PROMPT if scoped_answer else "") \
         + (USE_MARKDOWN_PROMPT if use_markdown else "")

@@ -25,13 +25,13 @@ def render_message(msg_list):
         return
     
     msg = msg_list[0]
-    message(msg["content"], is_user=msg["role"] == "user", key=str(time.time()))
+    message(msg["content"].replace('$', '&#36;'), is_user=msg["role"] == "user", key=str(time.time()))
 
 # Render chat box
 def chatbox(modelfamily, model, instructions, scoped_answer, use_markdown, temperature, use_cache, similarity_threshold):
     colored_header(
         label="🧉 ChatMate",
-        description="Whereof one cannot speak clearly, thereof one must be silent",
+        description="Whereof one cannot speak clearly, thereof one must remain silent",
         color_name="violet-70",
     )
     # If new user message submitted, send it to the assistant

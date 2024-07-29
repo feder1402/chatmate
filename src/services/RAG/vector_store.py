@@ -62,7 +62,7 @@ def retrieve_docs(query):
     for doc in ordered_byScore:
         content = doc[0].page_content
         score = doc[1]
-        if score < 0.7 and content not in seen:
+        if score < st.session_state["retrieval_score_threshold"] and content not in seen:
             unique_docs.append(content)
             unique_docs_and_score.append(doc)
             seen.add(content)
