@@ -12,7 +12,7 @@ Answer the user question using the information in the <context> below.
 """
 
 SCOPED_PROMPT = """
-If the answer to the user's question is not contained in the provided context, answer 🤷.
+If the answer to the user question is not contained in the <context>, answer 🤷.
 """
 # If the answer to the user question is not contained in the provided context and cannot be inferred from it, 
 # answer 🤷.
@@ -23,15 +23,15 @@ Use Markdown to format your response.
 """
 
 TRANSPARENT_CONTEXT = """
-Do not mention the context in your answer.
+Do not mention the <context> in your answer.
 """
 
 def get_fullInstructions(instructions, scoped_answer, use_markdown):
     full_instructions = instructions \
-        + USE_CONTEXT_PROMPT \
         + TRANSPARENT_CONTEXT \
         + (SCOPED_PROMPT if scoped_answer else "") \
-        + (USE_MARKDOWN_PROMPT if use_markdown else "")
+        + (USE_MARKDOWN_PROMPT if use_markdown else "") \
+        + USE_CONTEXT_PROMPT 
     return full_instructions
 
 def get_prompt(instructions, scoped_answer, use_markdown, context):

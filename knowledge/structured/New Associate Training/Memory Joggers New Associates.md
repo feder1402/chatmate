@@ -1,0 +1,341 @@
+This document titled "Memory Joggers for New Associates" provides a comprehensive list of various professions, activities, and regions to help new associates think of potential contacts who might be interested in their services. 
+
+This document helps new associates identify potential prospects by prompting them to think of people they know in various professions, activities, and geographical locations.
+
+---
+
+# Memory Joggers
+
+## Ask yourself: Who do I know associated with the following areas?
+
+- **Accounting**
+- **Acting**
+- **Advertising**
+- **Aerobics**
+- **Air Force**
+- **Airline**
+- **Alarm Systems**
+- **Antiques**
+- **Apartment**
+- **Architect**
+- **Army**
+- **Art**
+- **Asphalt**
+- **Athletics**
+- **Attorneys**
+- **Auctioneer**
+- **Automobile**
+- **Babysitters**
+- **Banking**
+- **Barber**
+- **Baseball**
+- **Basketball**
+- **Beauty Salon**
+- **Bible School**
+- **Bicycles**
+- **Blinds**
+- **Boats**
+- **Bonds/Stocks**
+- **Books**
+- **Bookkeeping**
+- **Boys Clubs**
+- **Brokers**
+- **Builders**
+- **Buses**
+- **Business Owners**
+- **Cable TV**
+- **Cameras**
+- **Camping**
+- **Chauffeur**
+- **Chef**
+- **City Employees**
+- **Coast Guard**
+- **Construction**
+- **Crafts**
+- **Credit Union**
+- **Day Care**
+- **Delivery**
+- **Dentists**
+- **Dermatologists**
+- **Designers**
+- **Detectives**
+- **Diet Industry**
+- **Disc Jockey**
+- **Doctors**
+- **Driving Range**
+- **Dry Cleaners**
+- **Dry Wall**
+- **Education**
+- **Electrician**
+- **Engineering**
+- **Entertainment**
+- **Eye Care**
+- **Fax Equipment**
+- **Farming**
+- **Film Industry**
+- **Firemen**
+- **Fishermen**
+- **Flight Attendants**
+- **Florists**
+- **Food Service**
+- **Fraternities**
+- **Furniture**
+- **Gardens**
+- **Gift Shops**
+- **Girls Clubs**
+- **Golfing**
+- **Government**
+- **Graphic Arts**
+- **Grocery Stores**
+- **Gymnastics**
+- **Hair Care**
+- **Handyman**
+- **Hardware**
+- **Health Clubs**
+- **Health Insurance**
+- **Hearing Aids**
+- **Helicopters**
+- **Hiking**
+- **Horses**
+- **Hospitals**
+- **Hotels**
+- **Hunting**
+- **Ice Cream**
+- **Ice Skating**
+- **Income Tax**
+- **Insurance**
+- **Investments**
+- **IT**
+- **Janitor**
+- **Jewelry**
+- **Kindergarten**
+- **Laundries**
+- **Lawn Care**
+- **Leasing**
+- **Libraries**
+- **Lighting**
+- **Livestock**
+- **Loans**
+- **Luggage**
+- **Lumber**
+- **Mail**
+- **Management**
+- **Manufacturing**
+- **Marines**
+- **Martial Arts**
+- **Mathematics**
+- **Mechanics**
+- **Media**
+- **Mental Health**
+- **Miniature Golf**
+- **Mobile Apps**
+- **Mobile Homes**
+- **Mortgages**
+- **Motels**
+- **Movie Theaters**
+- **Museums**
+- **Music**
+- **Mutual Funds**
+- **Nail Salon**
+- **Navy**
+- **Newspapers**
+- **Nurses**
+- **Nutrition**
+- **Office Machines**
+- **Oil Changes**
+- **Optometrists**
+- **Orthodontist**
+- **Painting**
+- **Paramedics**
+- **Parking**
+- **Parties**
+- **Pediatricians**
+- **Pedicures**
+- **Pensions**
+- **Personnel**
+- **Pest Control**
+- **Pets**
+- **Pharmacies**
+- **Phones**
+- **Photography**
+- **Physician**
+- **Pianos**
+- **Pizza**
+- **Plastics**
+- **Plumbing**
+- **Podiatrist**
+- **Police**
+- **Pools**
+- **Preschools**
+- **Principals**
+- **Printing**
+- **Property Manager**
+- **Psychiatrists**
+- **Psychologists**
+- **Publishers**
+- **Racing**
+- **Radio**
+- **Railroad**
+- **Real Estate**
+- **Rehabilitation**
+- **Religion**
+- **Rental Agencies**
+- **Reporters**
+- **Resorts**
+- **Rest Homes**
+- **Restaurants**
+- **Retail**
+- **Roller Blading**
+- **Roofing**
+- **Safety**
+- **Sales**
+- **Sandblasting**
+- **Sanitation**
+- **Satellites**
+- **School**
+- **Screen Printing**
+- **Scuba Diving**
+- **Secretaries**
+- **Security**
+- **Self Defense**
+- **Sewing**
+- **Sheetrock**
+- **Shoe Repair**
+- **Siding**
+- **Signs**
+- **Singing**
+- **Skating**
+- **Skeet Shooting**
+- **Skiing**
+- **Skin Care**
+- **Soccer**
+- **Social Services**
+- **Softball**
+- **Software**
+- **Sororities**
+- **Spas**
+- **Sporting Goods**
+- **State Employees**
+- **Steam Cleaning**
+- **Stereos**
+- **Stocks**
+- **Surgeons**
+- **Surveyors**
+- **T-Shirts**
+- **Tailors**
+- **Talent Agent**
+- **Tanning Salons**
+- **Taxes**
+- **Teachers**
+- **Technology**
+- **Telemarketing**
+- **Television**
+- **Tennis**
+- **Theaters**
+- **Therapists**
+- **Tires**
+- **Title Companies**
+- **Tools**
+- **Towing**
+- **Townhouses**
+- **Training**
+- **Transmissions**
+- **Troop Leaders**
+- **Trucking**
+- **Unions**
+- **Universities**
+- **Upholstery**
+- **Used Cars**
+- **Vacuum Cleaners**
+- **Vending**
+- **Veterinarian**
+- **Veterans**
+- **Video**
+- **Volunteers**
+- **Wallpaper**
+- **Waste**
+- **Water Skiing**
+- **Weddings**
+- **Wine**
+- **Woodworking**
+- **Writing**
+- **Zoos**
+
+## Ask yourself: Who do I know who lives in the following areas?
+
+### United States:
+
+- Alabama
+- Alaska
+- Arizona
+- Arkansas
+- California
+- Colorado
+- Connecticut
+- Delaware
+- Florida
+- Georgia
+- Hawaii
+- Idaho
+- Illinois
+- Indiana
+- Iowa
+- Kansas
+- Kentucky
+- Louisiana
+- Maine
+- Maryland
+- Massachusetts
+- Michigan
+- Minnesota
+- Mississippi
+- Missouri
+- Montana
+- Nebraska
+- Nevada
+- New Hampshire
+- New Jersey
+- New Mexico
+- New York
+- North Carolina
+- North Dakota
+- Ohio
+- Oklahoma
+- Oregon
+- Pennsylvania
+- Rhode Island
+- South Carolina
+- South Dakota
+- Tennessee
+- Texas
+- Utah
+- Vermont
+- Virginia
+- Washington
+- West Virginia
+- Wisconsin
+- Wyoming
+
+### Canada:
+
+- Alberta
+- British Columbia
+- Manitoba
+- New Brunswick
+- Newfoundland & Labrador
+- Nova Scotia
+- Ontario
+- Prince Edward Island
+- Quebec
+- Saskatchewan
+- Northwest Territories
+- Nunavut
+- Yukon
+
+## Ask yourself: Who do I know?
+
+**Friends & Family**
+**Business & Community**
+
+---
+

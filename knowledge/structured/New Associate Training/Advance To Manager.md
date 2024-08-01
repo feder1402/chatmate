@@ -1,4 +1,4 @@
-The document titled "Advance To Manager" outlines the criteria and incentives for LegalShield associates to advance to the Manager level within their first 45 days. Here is the extracted content:
+This document provides detailed information on how to qualify for the Manager level, the bonuses available at each step, and the necessary training and conditions to be eligible for these incentives.
 
 ---
 
@@ -38,17 +38,4 @@ The document titled "Advance To Manager" outlines the criteria and incentives fo
 - Associates with less than 12 months of retention data or associates with the majority of their business in the last three months will be evaluated for retention. The evaluation will be based on the company average for that time period and by the Business Health Index, which calculates future persistency based on associate data.
 - All associates must be in good standing with the company to receive incentives, including bonuses or trips. Any associate that is currently being sanctioned or on hold status will not be eligible.
 
-**Legal Terms:**
-- By participating in any LegalShield incentive or bonus program and to receive benefits, cash or otherwise, the associate agrees to have his/her full name, associate title, level, or standing published and recognized in LegalShield marketing materials, whether oral, written, or electronic.
-- LegalShield reserves the right, in its sole discretion, to review all incentives and bonuses, business submitted or activity, and where necessary, in its sole discretion, delay or stop payment of any bonus, to charge back bonuses when appropriate, and to amend or revoke this incentive, or any part thereof, at any time.
-- This incentive or bonus program is not a separate contract and no guarantee or promise of increased income or business is implied. Individual results and success as an independent sales associate depend on individual effort and abilities.
-- For statistics on actual earnings, please review the Income Disclosure Statement at [wearelegalshield.com/income-disclosure](https://wearelegalshield.com/income-disclosure).
-
-**Useful Links:**
-- [LegalShield Calendar](https://legalshieldcalendar.com/)
-- [Incentive Program Guidelines](https://legalshield.myvoffice.com/pdf/en/IPG.pdf)
-- [Income Disclosure](https://wearelegalshield.com/income-disclosure)
-
 ---
-
-This document provides detailed information on how to qualify for the Manager level, the bonuses available at each step, and the necessary training and conditions to be eligible for these incentives.

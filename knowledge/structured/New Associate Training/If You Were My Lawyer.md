@@ -1,4 +1,6 @@
-The document titled "If You Were My Lawyer" provides a story and a question technique to help prospects understand the value of having legal services available for a low monthly rate. Here is the extracted content:
+This document titled "If You Were My Lawyer" provides a story and a question technique to help prospects understand the value of having legal services available for a low monthly rate. 
+
+This document provides a story or "thought" ex[erminet associates can use to help prospective customers to understand the value of LegalShield services
 
 ---
 

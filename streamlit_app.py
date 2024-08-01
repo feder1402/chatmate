@@ -66,7 +66,7 @@ with st.sidebar:
         col2.button("Chunks", on_click=lambda: show_chunks())       
         col3.button("Reload", on_click=lambda: refresh_docs(True))
     with st.expander("Semantic caching", icon="🔍"):
-        use_cache = st.toggle("Use semantic cache", value=False, help="Use semantic cache to speed up the search")
+        use_cache = st.toggle("Use semantic cache", value=True, help="Use semantic cache to speed up the search")
         similarity_threshold = 1.0
         if use_cache:
             similarity_threshold = st.slider("Similarity threshold", 0.0, 1.0, value=0.8, help="Minimum similarity to consider it a match. Lower values will return more results; 1.0 means exact match")           

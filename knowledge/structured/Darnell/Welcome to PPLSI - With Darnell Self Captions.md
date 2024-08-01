@@ -1,12 +1,10 @@
 # Welcome to PPLSI - With Darnell Self
 
-## Welcome to PPLSI Family
 Congratulations and welcome to the PPLSI family. My name is Darnell Self. I'm one of the many million-dollar income earners here. Again, congratulations on your decision to join us.
 
-## Darnell Self's Journey
 I had a day one just like you. I used to work at the mall, 60-80 hours a week, missing out on personal life. A friend introduced me to PPLSI. The system in place impressed me, and people shared their best practices and mistakes with me.
 
-## Your First 48 Hours
+## What to do in your first 48 Hours
 
 ### Making a List
 Make a list of 10 people you love and who love you. We'll give you a short script to send to them and a video for them to watch. You don't have to think about what to say; we've got you covered.

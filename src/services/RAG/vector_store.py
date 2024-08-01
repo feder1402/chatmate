@@ -37,8 +37,8 @@ def load_documents(knowledgeDirectoryPath, force_refresh=False):
         loader = DirectoryLoader(knowledgeDirectoryPath, glob="**/*.*", loader_cls=TextLoader) 
         loaded_docs = loader.load() 
 
-        splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100) 
-        #splitter = SemanticChunker(embeddings)
+        splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=0) 
+        #splitter = SemanticChunker(embeddings, breakpoint_threshold_type="gradient")
 
         chunks = splitter.split_documents(loaded_docs) 
     

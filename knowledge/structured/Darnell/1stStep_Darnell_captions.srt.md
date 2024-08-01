@@ -1,57 +1,29 @@
 # First Steps
 
-## Welcome to PPLSI Family
-
 Hello and welcome to the PPLSI family. I'm Darnell Self, one of the many million-dollar ring earners here with our company. All that means is that when you've earned a million dollars within a 12-month time frame, our company presents you with 12 rings, and this is one of the 12.
-
-## My First Day
 
 Guess what? I had a first day just like you. I was at my highest level of anxiety and my lowest level of knowledge. I didn't know what to expect even though I was excited, and I didn't really know what to do because I was new. But just like you, I had an amazing system in place. You have that same system that you're participating with right now. So congratulations!
 
-## Facing Rejections
-
 Because I believed in the product so much, I thought everybody needed these services. I thought everybody I talked to would see that value too. Well, that didn't quite happen. In fact, I received more no's than yeses. I know you're probably thinking, isn't this guy supposed to be encouraging me? If you're anything like me, you want people to tell you the real deal, like tell you what to expect so you can set your expectations properly.
-
-## System and Training
 
 Yes, we have a system in place, and yes, we can point you in the right direction. But remember, we're talking about people, and not everybody has an interest in the same thing. The potential for you to succeed here is immense. Why? We've already proven the system works. We've already made the mistakes so we can help you avoid some of those mistakes as we share with you best practices. You can take as many training classes and attend as many events as you like as you become more comfortable. But guess what? You earn and learn at the exact same time.
 
-## Getting Paid and Promoted
-
 We want you to get paid, promoted, and fast start qualified, which includes a training class. We want you to get paid because otherwise, you'll say, "This guy watching a video, well he said he made a lot of money. My sponsor, the person that introduced me, I know they've made some money." But you'll never be able to say, "I know," like not "I heard," not "I think," but "I actually know, I've experienced it myself." It comes across differently when that happens.
-
-## Promoting and Bonuses
 
 If you're going to do the activity, why not get paid the maximum amount? If I'm going to share this information, if I'm going to send someone a video today and say, "Hey look, I'm so excited about a company I've just partnered with. Would you do me a huge favor and watch this quick two-minute video, and I'll call you back and find out what you like most?" We all know somebody who we love and care about and who loves and cares about us who will at least watch a two-minute video. If they want more information, then there's a follow-up video we can send them. We're even going to share with you scripts where you can actually text a script out.
 
-## Follow-up and Independence
-
 You don't have to think of your own words, and if you want to customize, you can, but we're going to give you the scripts. You don't have to worry about that. You don't have to do the actual talking because the video is going to do that for you. You don't even have to know the presentation because the video is going to do that for you, and it's awesome. Anybody can do it, and they can do it five minutes after they get started with our company, just like you.
-
-## Importance of Fast Start Training
 
 We want you to get promoted so you're earning more for the same activity, and there are some bonuses if you do it fast. We want you to do it fast because there's a training class happening today. Sure, go ahead and get into that training class, but we can still get you paid right away. What's the importance of getting paid right away other than your belief level? I talked about that, right? You feel like, "My gosh, this is real."
 
-## Long-term Vision
-
 Hopefully, you feel like this is a home for you, somewhere you can live with or a company you can live in for a long time. That's important because I believe if you're going to do something, why not do something and still get paid for the thing you did long-term? We have real residual income. I've been with PPLSI for 23 years. I started in my 20s, and I'm in my 50s now. I'm still blessed to get paid off of things I did back in my 20s, 30s, and 40s.
-
-## Creating Your First Week Story
 
 If this is going to be a home and something you're looking at doing next year and the year after that, you know the one story you'll always be able to tell? Your first week story. Someone's going to say to you, "I'm new, I'm just getting started, how was your first week?" You get an opportunity to lay out that story right now. You get to create that story right now. You design that story. Isn't this awesome? I can always tell my first month story, my first week story, my first year story. I just told it today, and so you get an opportunity to tell that story.
 
-## The Importance of Getting Paid Quickly
-
 Let's create a story that you don't mind telling over and over again. This is why I want you to get paid right away. When someone says, "How'd it go for you?" you can talk about some meaningful income. You can say, "I made $500 my first week, my first month." Someone says, "Really? Can you show me how you did that?" I'm excited to do that. If I said, "Hey, I didn't make any money my first week or my first month," no one's going to say, "Well, can you show me how to do that?"
-
-## Fast Start Qualify
 
 This is another reason why we want to help you get paid, promoted, and fast start qualify right away. You can get your first customer today, and your sponsor is going to help guide you through that process. Again, it's really you just sending the information out, and we have tools in place that will track that information for you. You're going to do the follow-up because our job as your leadership and your coach is to help you become as independent as us as fast as you can.
 
-## Independence and Leadership
-
 What does that mean? That means that if I take a vacation to Europe for a month, your business should still run just as effectively because I've helped you learn the system that I taught you. You can then turn around and help others do the exact same thing. There are follow-up videos right here for you. There will be some videos that share more about our apps, tools we use, and our membership.
-
-## Compensation and Additional Resources
 
 Obviously, that's important because we're marketing services that add immense value to the lives of others. Our compensation is more about how we get paid. There are additional videos you can click on, and if you're like me, because I wanted this to happen faster rather than slower, I said, "Hey look, I'm willing to learn as much as I can, but it's not going to get in the way of me getting paid as fast as I can." So yes, learn, but earn at the exact same time.
