@@ -1,8 +1,10 @@
+from langchain_anthropic import ChatAnthropic
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.chat_history import BaseChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_openai import ChatOpenAI
 
 from src.services.semantic_cache import retrieve_from_cache, store_in_cache
 from src.services.RAG.vector_store import retrieve_docs
@@ -46,6 +48,16 @@ def get_prompt(instructions, scoped_answer, use_markdown, context):
     )
     return prompt
 
+def augment_query_generated(query, client):
+    messages = [
+        ("system", "You are a helpfull agent. Provide an example answer to the user question."),
+        ("user", "{query}")
+    ]
+    prompt = ChatPromptTemplate.from_messages(messages)
+    chain = prompt | client
+    response = chain.invoke({"query": query})
+    return response.content    
+
 def get_response(query, modelfamily, model, instructions, scoped_answer, use_markdown, temperature, use_cache, similarity_threshold):    
     if use_cache:
         cached, similarity = retrieve_from_cache(query, similarity_threshold)
@@ -54,6 +66,8 @@ def get_response(query, modelfamily, model, instructions, scoped_answer, use_mar
             cached["similarity"] = similarity
             return cached
     client = get_client(modelfamily, model, temperature)
+    # augmented_query = augment_query_generated(query, client)
+    # print(augmented_query)
     context, docs_with_scores = retrieve_docs(query)
     prompt = get_prompt(instructions, scoped_answer, use_markdown, context)
 
@@ -77,7 +91,7 @@ def get_response(query, modelfamily, model, instructions, scoped_answer, use_mar
         
     return response
 
-def get_client(model_family, model, temperature):
+def get_client(model_family, model, temperature) -> ChatOpenAI | ChatAnthropic:
     if model_family == "openai":
         from langchain_openai import ChatOpenAI
         model = ChatOpenAI(model=model, temperature=temperature)

@@ -17,3 +17,6 @@ streamlit-feedback==0.1.3
 streamlit-extras==0.4.3
 faiss-cpu==1.8.0.post1
 protobuf==4.25.3
+umap
+numpy
+tqdm

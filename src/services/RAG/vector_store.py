@@ -50,7 +50,7 @@ def load_documents(knowledgeDirectoryPath, force_refresh=False):
     return vector_store
 
 def retrieve_docs(query):
-    vector_store = st.session_state["vector_store"]
+    vector_store: Chroma = st.session_state["vector_store"]
     # Get documents similar to the query ith their scores
     docs_and_score = vector_store.similarity_search_with_score(query)
     
