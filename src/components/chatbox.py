@@ -28,7 +28,7 @@ def render_message(msg_list):
     message(msg["content"].replace('$', '&#36;'), is_user=msg["role"] == "user", key=str(time.time()))
 
 # Render chat box
-def chatbox(modelfamily, model, instructions, scoped_answer, use_markdown, temperature, use_cache, similarity_threshold):
+def chatbox(modelfamily, model, instructions, scoped_answer, use_markdown, temperature, use_cache, similarity_threshold, show_resource_links):
     colored_header(
         label="🧉 ChatMate",
         description="Whereof one cannot speak clearly, thereof one must remain silent",
@@ -42,7 +42,7 @@ def chatbox(modelfamily, model, instructions, scoped_answer, use_markdown, tempe
         
         with st.spinner("Thinking..."):
             start_time = time.time()
-            response = get_response(query, modelfamily, model, instructions, scoped_answer, use_markdown, temperature, use_cache, similarity_threshold)
+            response = get_response(query, modelfamily, model, instructions, scoped_answer, use_markdown, temperature, use_cache, similarity_threshold, show_resource_links)
             elapsed_time = time.time() - start_time
             
         thread.append({"role": "assistant", "content": response["content"], "elapsed_time": elapsed_time})

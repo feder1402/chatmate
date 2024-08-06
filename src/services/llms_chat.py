@@ -28,16 +28,21 @@ TRANSPARENT_CONTEXT = """
 Do not mention the <context> in your answer.
 """
 
-def get_fullInstructions(instructions, scoped_answer, use_markdown):
+SHOW_RESOURCE_LINKS_PROMPT = """
+If available, include a link to every resource mentioned.
+"""
+
+def get_fullInstructions(instructions, scoped_answer, use_markdown, show_resource_links):
     full_instructions = instructions \
         + TRANSPARENT_CONTEXT \
         + (SCOPED_PROMPT if scoped_answer else "") \
         + (USE_MARKDOWN_PROMPT if use_markdown else "") \
+        + (SHOW_RESOURCE_LINKS_PROMPT if show_resource_links else "") \
         + USE_CONTEXT_PROMPT 
     return full_instructions
 
-def get_prompt(instructions, scoped_answer, use_markdown, context):
-    full_instructions = get_fullInstructions(instructions, scoped_answer, use_markdown)
+def get_prompt(instructions, scoped_answer, use_markdown, show_resource_links, context):
+    full_instructions = get_fullInstructions(instructions, scoped_answer, use_markdown, show_resource_links)
     content = full_instructions \
         + "\n\n<context>\n\n" + context + "\n\n</context>\n\n"
     prompt = ChatPromptTemplate.from_messages(
@@ -58,7 +63,7 @@ def augment_query_generated(query, client):
     response = chain.invoke({"query": query})
     return response.content    
 
-def get_response(query, modelfamily, model, instructions, scoped_answer, use_markdown, temperature, use_cache, similarity_threshold):    
+def get_response(query, modelfamily, model, instructions, scoped_answer, use_markdown, temperature, use_cache, similarity_threshold, show_resource_links):    
     if use_cache:
         cached, similarity = retrieve_from_cache(query, similarity_threshold)
         if cached is not None:
@@ -66,10 +71,9 @@ def get_response(query, modelfamily, model, instructions, scoped_answer, use_mar
             cached["similarity"] = similarity
             return cached
     client = get_client(modelfamily, model, temperature)
-    # augmented_query = augment_query_generated(query, client)
-    # print(augmented_query)
+
     context, docs_with_scores = retrieve_docs(query)
-    prompt = get_prompt(instructions, scoped_answer, use_markdown, context)
+    prompt = get_prompt(instructions, scoped_answer, use_markdown, show_resource_links, context)
 
     chain = prompt | client
     response = chain.invoke({"messages": [HumanMessage(content=query)]})
@@ -83,7 +87,7 @@ def get_response(query, modelfamily, model, instructions, scoped_answer, use_mar
         "docs_with_scores": docs_with_scores,
         "context": context,
         "metadata": metadata,
-        "instructions": get_fullInstructions(instructions, scoped_answer, use_markdown),
+        "instructions": get_fullInstructions(instructions, scoped_answer, use_markdown, show_resource_links),
         }
     
     if use_cache:

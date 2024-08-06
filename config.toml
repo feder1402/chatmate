@@ -1,0 +1,4 @@
+[server]
+fileWatcherType = "watchdog"
+runOnSave = true
+headless = true

@@ -58,7 +58,7 @@ with st.sidebar:
     with st.expander("**Model**", icon="🤖", expanded=True):
         modelfamily, model = select_model()
     with st.expander("**Prompt**", icon="🎓"):
-        instructions, scoped_answer, use_markdown, temperature = prompt_options()
+        instructions, scoped_answer, use_markdown, temperature, show_resource_links = prompt_options()
     with st.expander("**Documents**", icon="📁"):
         st.write("**Path:** " + st.session_state["DocumentsPath"])
         st.session_state["retrieval_score_threshold"] = st.slider("Retrieval score threshold", 0.0, 1.0, value=0.6, help="Maximum score to consider a document relevant during retrieval. Zero means most relevant.")
@@ -73,5 +73,5 @@ with st.sidebar:
     with st.expander("**Saved Queries**", icon="❓"):
         render_saved_queries()   
  
-chatbox(modelfamily, model, instructions, scoped_answer, use_markdown, temperature, use_cache, similarity_threshold)  
+chatbox(modelfamily, model, instructions, scoped_answer, use_markdown, temperature, use_cache, similarity_threshold, show_resource_links)  
     

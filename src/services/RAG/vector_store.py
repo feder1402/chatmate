@@ -37,7 +37,7 @@ def load_documents(knowledgeDirectoryPath, force_refresh=False):
         loader = DirectoryLoader(knowledgeDirectoryPath, glob="**/*.*", loader_cls=TextLoader) 
         loaded_docs = loader.load() 
 
-        splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=0) 
+        splitter = RecursiveCharacterTextSplitter(chunk_size=8000, chunk_overlap=0) 
         #splitter = SemanticChunker(embeddings, breakpoint_threshold_type="gradient")
 
         chunks = splitter.split_documents(loaded_docs) 
@@ -52,7 +52,9 @@ def load_documents(knowledgeDirectoryPath, force_refresh=False):
 def retrieve_docs(query):
     vector_store: Chroma = st.session_state["vector_store"]
     # Get documents similar to the query ith their scores
-    docs_and_score = vector_store.similarity_search_with_score(query)
+    # docs_and_score = vector_store.similarity_search_with_score(query)
+    docs = vector_store.max_marginal_relevance_search(query, k=2)
+    docs_and_score = [(doc, 0.20) for doc in docs]
     
     # Remove duplicates and unrelated documents
     unique_docs = []
