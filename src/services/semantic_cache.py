@@ -10,7 +10,9 @@ def cosine_similarity(a, b):
 
 def get_embedding(text, model="text-embedding-3-small"):
    text = text.replace("\n", " ")
-   return client.embeddings.create(input = [text], model=model).data[0].embedding
+   embeddings = client.embeddings.create(input = [text], model=model)
+   
+   return embeddings.data[0].embedding
 
 def retrieve_from_cache(query, similarity_threshold):
     query_embedding = get_embedding(query)

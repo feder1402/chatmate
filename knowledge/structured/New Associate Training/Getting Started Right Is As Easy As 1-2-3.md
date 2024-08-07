@@ -1,6 +1,4 @@
-The document titled "Getting Started Right: It's As Easy As 1-2-3" provides a simple checklist to help individuals begin their journey with PPLSI. Here are the extracted key points:
-
----
+This document provides a set of steps for contacting prospects togeter with sample email or text scripts that can be used when contacting the prospects. 
 
 ### Getting Started Right: It's As Easy As 1-2-3
 
@@ -8,7 +6,7 @@ The document titled "Getting Started Right: It's As Easy As 1-2-3" provides a si
    - This list includes the people who always help you out (e.g., your mom, sister, best friend).
    - These individuals form your "hot list" of contacts.
 
-**2. Send your scripts:**
+**2. Send your scripts using email or text:**
    - **To your top 10 prospects (those very familiar with you):**
      - "Hey ________, I am starting a new business, and there’s something I want to show you. I figure you may or may not be interested, but it will only take a few minutes. If I send you a 3-minute video, will you watch it for me? Text me back when you watch it. (PPLSIProtect.com)”
    
@@ -24,21 +22,10 @@ The document titled "Getting Started Right: It's As Easy As 1-2-3" provides a si
    - Additional information on how to register can be found [here](https://legalshield.myvoffice.com/pdf/en/How_To_Register_For_Fast_Start_Training_v2.pdf).
    - After completing your Fast Start training, contact your sponsor to learn about the next steps.
 
----
-
-**Disclaimer:**
-- This information is for use by Pre-Paid Legal Services, Inc. (PPLSI), its affiliates, and its independent associates.
-- Do not duplicate or disseminate without express, written permission from PPLSI.
-- No guarantee or promise of increased income or business is implied.
-- Individual results and success depend on individual effort and abilities.
-- For statistics on actual earnings, review the Income Disclosure Statement at [opportunity.legalshield.com](http://opportunity.legalshield.com).
-
 **Useful Links:**
 - [We Are LegalShield](https://www.wearelegalshield.com/protect)
 - [PPLSIProtect.com](http://PPLSIProtect.com)
 - [PPLSIEmpower.com](http://PPLSIEmpower.com)
 - [LegalShield Calendar](https://legalshieldcalendar.com/)
-
----
 
 This checklist aims to provide a straightforward guide for new associates to get started with their PPLSI business by identifying key contacts, communicating effectively, and engaging in essential training.

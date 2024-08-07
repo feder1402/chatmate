@@ -15,6 +15,7 @@ Initial Contact:
 "Hi (insert their first name). I know we don’t know each other but I'm always looking to work with other sharp people. I'm looking to expand my business and curious if you are keeping your business options open if it won’t interfere with your primary business (or job). If not, no problem at all. Nice meeting you either way."
 "We help connect families and business owners with affordable legal access. I’m multitasking right now so can’t get into it much, but can we set aside some time to speak with each other this evening or tomorrow to discuss the details? I’m free around 5 pm Pacific tonight or 11 am Pacific tomorrow. Would either time work for you?"
 "Ok perfect. Give me a call at xxx-xxx-xxxx. What’s yours so I’ll know it’s you calling me?"
+
 Text Before Meeting:
 
 "Hey (insert their first name), it’s (insert your first name). Looking forward to connecting with you tomorrow at 11 am. In the meantime, here is a short commercial to give you an idea of what we do."

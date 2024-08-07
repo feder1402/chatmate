@@ -16,7 +16,8 @@ QUERIES = [
     "What are the benefits of being an associate?",
     "What is Darnell story?",
     "What is the capital of Argentina?",
-    "what would you say to a customer who is planning to cancel his plan?"
+    "what would you say to a customer who is planning to cancel his plan?",
+    "I need to send an email to a prospect. Do you have a script I can use?"
 ]
 
 def set_message(text):
