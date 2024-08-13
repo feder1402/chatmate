@@ -23,7 +23,7 @@ This document titled "Best Practices for Saving Members" provides guidelines for
 
 **Final Steps:**
 - Review membership features and value.
-- Encourage usage of benefits and resources like LSEngage.com and the Prospect by PPLSI app.
+- Share resources available on [LSEngage](https://LSEngage.com) and the Prospect by PPLSI mobile app if needed. 
 
 **Important Contacts:**
 - Member Services Rapid Response Line: 866.966.2222

@@ -50,7 +50,7 @@ The document titled "Fast Start Training Companion Guide" provides comprehensive
    - This is your “hot list” of contacts.
    
 2. **Send your scripts:**
-   - To top 10 prospects: "Hey ________, I am starting a new business, and there’s something I want to show you. I figure you may or may not be interested, but it will only take a few minutes. If I send you a 3-minute video, will you watch it for me? Text me back when you watch it."
+   - To top 10 potential members: "Hey ________, I am starting a new business, and there’s something I want to show you. I figure you may or may not be interested, but it will only take a few minutes. If I send you a 3-minute video, will you watch it for me? Text me back when you watch it."
    - To other people: “________, you may or may not be interested, but there’s something I want to show you. It will only take a few minutes. If I send you a 3-minute video, will you watch it?”
    - **For Membership:** Send the link [PPLSIProtect.com](http://PPLSIProtect.com)
    - **For Opportunity:** Send the link [PPLSIEmpower.com](http://PPLSIEmpower.com)

@@ -1,13 +1,13 @@
-This document titled "If You Were My Lawyer" provides a story and a question technique to help prospects understand the value of having legal services available for a low monthly rate. 
+This document titled "If You Were My Lawyer" provides a story and a question technique to help potential members understand the value of having legal services available for a low monthly rate. 
 
-This document provides a story or "thought" ex[erminet associates can use to help prospective customers to understand the value of LegalShield services
+This document provides a story or "thought" ex[erminet associates can use to help potential members to understand the value of LegalShield services
 
 ---
 
 ### If You Were My Lawyer
 
 **Purpose:**
-- The “If You Were My Lawyer” story is designed to help prospects realize the benefits of having access to legal services at a low monthly cost.
+- The “If You Were My Lawyer” story is designed to help potential members realize the benefits of having access to legal services at a low monthly cost.
 - It's an effective way to start a conversation with contacts or prospects.
 
 **Story Outline:**
@@ -37,4 +37,4 @@ This document provides a story or "thought" ex[erminet associates can use to hel
 
 ---
 
-This document uses a relatable scenario to help prospects understand the value and practicality of having legal services on a retainer for a low monthly fee, encouraging them to see the benefits of such an arrangement.
+This document uses a relatable scenario to help potential members understand the value and practicality of having legal services on a retainer for a low monthly fee, encouraging them to see the benefits of such an arrangement.

@@ -61,7 +61,7 @@ with st.sidebar:
         instructions, scoped_answer, use_markdown, temperature, show_resource_links = prompt_options()
     with st.expander("**Documents**", icon="📁"):
         st.write("**Path:** " + st.session_state["DocumentsPath"])
-        st.session_state["retrieval_score_threshold"] = st.slider("Retrieval score threshold", 0.0, 1.0, value=0.6, help="Maximum score to consider a document relevant during retrieval. Zero means most relevant.")
+        st.session_state["retrieval_score_threshold"] = st.slider("Retrieval score threshold", 0.0, 1.0, value=0.7, help="Maximum score to consider a document relevant during retrieval. Zero means most relevant.")
         col1, col2, col3 = st.columns([2, 4, 4])
         col2.button("Chunks", on_click=lambda: show_chunks())       
         col3.button("Reload", on_click=lambda: refresh_docs(True))

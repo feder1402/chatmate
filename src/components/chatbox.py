@@ -11,14 +11,15 @@ thread = []
 def message(content, is_user=False, key=None):
     if is_user:
         st.write(
-            f'<div style="text-align:right; padding: 5px 10px;">{"😎 " + content}</div>',
+            f'<div style="text-align:right; padding: 5px 10px;">😎 <b>You</b>: {content}</div>',
             unsafe_allow_html=True
         )
     else:
         st.write(
-            f'<div style="text-align:left; padding: 5px 10px;">{"🧉 " + content}</div>',
+            f'<div style="text-align:left; padding: 5px 10px;">🧉 <b>ChatMate</b>:</div>',
             unsafe_allow_html=True
         )
+        st.markdown(            content        )
  
 def render_message(msg_list):
     if len(msg_list) == 0:

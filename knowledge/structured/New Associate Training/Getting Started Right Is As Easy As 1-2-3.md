@@ -1,4 +1,4 @@
-This document provides a set of steps for contacting prospects togeter with sample email or text scripts that can be used when contacting the prospects. 
+This document provides a set of steps for contacting prospects together with sample email or text scripts that can be used for contacting the prospects. 
 
 ### Getting Started Right: It's As Easy As 1-2-3
 
@@ -28,4 +28,4 @@ This document provides a set of steps for contacting prospects togeter with samp
 - [PPLSIEmpower.com](http://PPLSIEmpower.com)
 - [LegalShield Calendar](https://legalshieldcalendar.com/)
 
-This checklist aims to provide a straightforward guide for new associates to get started with their PPLSI business by identifying key contacts, communicating effectively, and engaging in essential training.
+This checklist aims to provide a straightforward guide for new associates to get started with their PPLSI (LegalShield) business by identifying key contacts, communicating effectively, and engaging in essential training.

@@ -7,7 +7,7 @@ QUERIES = [
     "What incentives and promotions are available for associates?",
     "I have a meeting with a potential client. What should I do?",
     "I have a call with a potential client. What should I do?",
-    "How can I help my customers understand the value of LegalShield services?",
+    "How can I help potential members understand the value of LegalShield services?",
     "What are the associate levels?",
     "What is the prospect mobile app?",
     "How do you save a member whose plan is going to be canceled?",

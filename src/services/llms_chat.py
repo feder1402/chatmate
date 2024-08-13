@@ -10,11 +10,13 @@ from src.services.semantic_cache import retrieve_from_cache, store_in_cache
 from src.services.RAG.vector_store import retrieve_docs
 
 USE_CONTEXT_PROMPT = """
-Answer the user question using the information in the <context> below.
+You will be provided with a context, consisting of a couple of articles (delimited with XML tags) about the same topic.
+First, find the answer to the user question in the context. 
+Then, craft an action-oriented response based on the answer you found.
 """
 
 SCOPED_PROMPT = """
-If the answer to the user question is not contained in the <context>, answer 🤷.
+If the answer to the user question is not contained in the context, answer 🤷.
 """
 # If the answer to the user question is not contained in the provided context and cannot be inferred from it, 
 # answer 🤷.
@@ -25,11 +27,11 @@ Use Markdown to format your response.
 """
 
 TRANSPARENT_CONTEXT = """
-Do not mention the <context> in your answer.
+Do not mention the context in your answer.
 """
 
 SHOW_RESOURCE_LINKS_PROMPT = """
-If available, include a link to every resource mentioned.
+If available, include a link to any resource mentioned.
 """
 
 def get_fullInstructions(instructions, scoped_answer, use_markdown, show_resource_links):

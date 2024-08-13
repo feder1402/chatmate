@@ -67,7 +67,7 @@ def retrieve_docs(query):
         if score < st.session_state["retrieval_score_threshold"] and content not in seen:
             unique_docs.append(content)
             unique_docs_and_score.append(doc)
-            seen.add(content)
+            seen.add("<article>\n\n" + content + "\n\n</article>")
             
     context = "\n\n".join(unique_docs)
     

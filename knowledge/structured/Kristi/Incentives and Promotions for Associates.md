@@ -1,0 +1,3 @@
+This document describes the incentives and promotions are available for associates.
+
+LegalShield provides bonus and incentive opportunities at all levels of the business. Our Fast Start program provides special bonus opportunities to new associates, while our Performance Club program provides an opportunity for all associates to earn a monthly bonus of up to $500. Please note, you must be a current subscriber of LegalShield Advantage to participate in our incentive programs. 
