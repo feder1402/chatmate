@@ -3,21 +3,20 @@ import platform
 import pandas as pd
 import os
 
-from dotenv import load_dotenv, find_dotenv
-
-from src.components.options.voice_panel import render_voice_panel
-from src.services.RAG.vector_store import load_documents
-from src.components.options.model_options import select_model
-from src.components.options.prompt_options import prompt_options
-from src.components.options.saved_queries import render_saved_queries
-from src.components.chatbox import chatbox
-
 current_platform = platform.system()
 
 if current_platform == "Linux":
     __import__('pysqlite3')
     import sys
     sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+from dotenv import load_dotenv, find_dotenv
+from src.components.options.voice_panel import render_voice_panel  
+from src.services.RAG.vector_store import load_documents
+from src.components.options.model_options import select_model
+from src.components.options.prompt_options import prompt_options
+from src.components.options.saved_queries import render_saved_queries
+from src.components.chatbox import chatbox
 
 st.set_page_config(layout="wide")
 
