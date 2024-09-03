@@ -3,6 +3,15 @@ import platform
 import pandas as pd
 import os
 
+from dotenv import load_dotenv, find_dotenv
+
+from src.components.options.voice_panel import render_voice_panel
+from src.services.RAG.vector_store import load_documents
+from src.components.options.model_options import select_model
+from src.components.options.prompt_options import prompt_options
+from src.components.options.saved_queries import render_saved_queries
+from src.components.chatbox import chatbox
+
 current_platform = platform.system()
 
 if current_platform == "Linux":
@@ -21,14 +30,7 @@ if "retrieval_score_threshold" not in st.session_state:
 st.session_state["DocumentsPath"] = "knowledge/structured"
 
 # Load API keys into the environment
-from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv()) # read local .env file
-
-from src.services.RAG.vector_store import load_documents
-from src.components.options.model_options import select_model
-from src.components.options.prompt_options import prompt_options
-from src.components.options.saved_queries import render_saved_queries
-from src.components.chatbox import chatbox
 
 KnowledgeDirectoryPath = st.session_state["DocumentsPath"]
 
@@ -70,8 +72,10 @@ with st.sidebar:
         similarity_threshold = 1.0
         if use_cache:
             similarity_threshold = st.slider("Similarity threshold", 0.0, 1.0, value=0.8, help="Minimum similarity to consider it a match. Lower values will return more results; 1.0 means exact match")           
+    with st.expander("Voice", icon="🎤"):
+        render_voice_panel()
     with st.expander("**Saved Queries**", icon="❓"):
         render_saved_queries()   
  
 chatbox(modelfamily, model, instructions, scoped_answer, use_markdown, temperature, use_cache, similarity_threshold, show_resource_links)  
-    
+

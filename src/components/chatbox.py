@@ -8,6 +8,7 @@ from src.components.stats.stats import show_stats
 
 thread = []  
 
+
 def message(content, is_user=False, key=None):
     if is_user:
         st.write(
@@ -16,7 +17,7 @@ def message(content, is_user=False, key=None):
         )
     else:
         st.write(
-            f'<div style="text-align:left; padding: 5px 10px;">🧉 <b>ChatMate</b>:</div>',
+            '<div style="text-align:left; padding: 5px 10px;">🧉 <b>ChatMate</b>:</div>',
             unsafe_allow_html=True
         )
         st.markdown(            content        )
@@ -35,6 +36,7 @@ def chatbox(modelfamily, model, instructions, scoped_answer, use_markdown, tempe
         description="Whereof one cannot speak clearly, thereof one must remain silent",
         color_name="violet-70",
     )
+
     # If new user message submitted, send it to the assistant
     if query := st.chat_input() or st.session_state["saved_query"]:
         prompt_msg = {"role": "user", "content": query}
