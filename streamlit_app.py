@@ -3,6 +3,13 @@ import platform
 import pandas as pd
 import os
 
+from dotenv import load_dotenv, find_dotenv  
+from src.components.options.voice_panel import render_voice_panel  
+from src.components.options.model_options import select_model
+from src.components.options.prompt_options import prompt_options
+from src.components.options.saved_queries import render_saved_queries
+from src.components.chatbox import chatbox
+
 current_platform = platform.system()
 
 if current_platform == "Linux":
@@ -10,13 +17,7 @@ if current_platform == "Linux":
     import sys
     sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
-from dotenv import load_dotenv, find_dotenv
-from src.components.options.voice_panel import render_voice_panel  
-from src.services.RAG.vector_store import load_documents
-from src.components.options.model_options import select_model
-from src.components.options.prompt_options import prompt_options
-from src.components.options.saved_queries import render_saved_queries
-from src.components.chatbox import chatbox
+from src.services.RAG.vector_store import load_documents # noqa: E402
 
 st.set_page_config(layout="wide")
 
@@ -67,7 +68,7 @@ with st.sidebar:
         col2.button("Chunks", on_click=lambda: show_chunks())       
         col3.button("Reload", on_click=lambda: refresh_docs(True))
     with st.expander("Semantic caching", icon="🔍"):
-        use_cache = st.toggle("Use semantic cache", value=True, help="Use semantic cache to speed up the search")
+        use_cache = st.toggle("Use semantic cache", value=False, help="Use semantic cache to speed up the search")
         similarity_threshold = 1.0
         if use_cache:
             similarity_threshold = st.slider("Similarity threshold", 0.0, 1.0, value=0.8, help="Minimum similarity to consider it a match. Lower values will return more results; 1.0 means exact match")           

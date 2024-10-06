@@ -1,7 +1,4 @@
 from langchain_anthropic import ChatAnthropic
-from langchain_community.chat_message_histories import ChatMessageHistory
-from langchain_core.chat_history import BaseChatMessageHistory
-from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
@@ -104,6 +101,9 @@ def get_client(model_family, model, temperature) -> ChatOpenAI | ChatAnthropic:
     elif model_family == "anthropic":
         from langchain_anthropic import ChatAnthropic
         model = ChatAnthropic(model=model, temperature=temperature)
+    elif model_family == "google":
+        from langchain_google_genai import ChatGoogleGenerativeAI
+        model = ChatGoogleGenerativeAI(model=model, temperature=temperature)
     else:
         raise ValueError(f"Model {model_family} not recognized")
     
@@ -112,7 +112,7 @@ def get_client(model_family, model, temperature) -> ChatOpenAI | ChatAnthropic:
 def get_metadata(model_family, model, response):
     if model_family == "anthropic":
         usage = {k: v for k, v in response.response_metadata["usage"].items() if k in ("input_tokens", "output_tokens")}
-    elif model_family == "openai":
+    elif model_family == "openai" or model_family == "google":
         usage = {k: v for k, v in response.usage_metadata.items() if k in ("input_tokens", "output_tokens")}
     else:
         raise ValueError(f"Model family {model_family} not recognized")
