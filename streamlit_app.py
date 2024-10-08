@@ -4,6 +4,7 @@ import pandas as pd
 import os
 
 from dotenv import load_dotenv, find_dotenv  
+from src.services.app_config  import load_config
 from src.components.options.voice_panel import render_voice_panel  
 from src.components.options.model_options import select_model
 from src.components.options.prompt_options import prompt_options
@@ -19,6 +20,9 @@ if current_platform == "Linux":
 
 from src.services.RAG.vector_store import load_documents # noqa: E402
 
+if "config" not in st.session_state:
+    st.session_state["config"] = load_config()    
+    
 st.set_page_config(layout="wide")
 
 if "saved_query" not in st.session_state:

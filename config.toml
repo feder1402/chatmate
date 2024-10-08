@@ -1,4 +1,25 @@
-[server]
-fileWatcherType = "watchdog"
-runOnSave = true
-headless = true
+saved_queries = [
+    "I'm a new associate. What should I do to be successful?",
+    "I'm an experienced associate. How can I continue growing?",
+    "How can I become a LegalShield associate?",
+    "What incentives and promotions are available for associates?",
+    "I have a meeting with a potential client. What should I do?",
+    "I have a call with a potential client. What should I do?",
+    "How can I help potential members understand the value of LegalShield services?",
+    "What are the associate levels?",
+    "What is the prospect mobile app?",
+    "How do you save a member whose plan is going to be canceled?",
+    "What are the key things to know about LegalShield?",
+    "What is LegalShield story?",
+    "What are the benefits of being an associate?",
+    "What is Darnell story?",
+    "What is the capital of Argentina?",
+    "what would you say to a customer who is planning to cancel his plan?",
+    "I need to send an email to a prospect. Do you have a script I can use?"
+]
+
+[models]
+    openai = ["gpt-4o-mini", "gpt-3.5-turbo", "gpt-4-turbo", "gpt-4o"]
+    anthropic = ["claude-3-haiku-20240307", "claude-3-5-sonnet-20240620", "claude-3-opus-20240229", "claude-3-sonnet-20240229", ]
+    google = ["gemini-1.5-flash", "gemini-1.5-pro", "gemini-1.5-flash-8b"]
+
