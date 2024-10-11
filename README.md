@@ -1,15 +1,22 @@
 # ChatMate
 
 **ChatMate** is a versatile chatbot sandbox client that can interact with multiple models
-and provides useful information about the models responses.
+and provides useful metrics and diagnostic information to evaluate and troubleshoot models responses.
+
+![ChatMate Preview](docs/chatmate.png)
 
 ### Key Features:
 1. **Chose your AI Model**: ChatMate supports for multiple AI models from Anthropic, Google,
- OpenAI, Meta (through Groq), etc. Additional models can be easily configured.
+ OpenAI, Meta (through Groq), etc. Additional models can be easily configured
+1. **Evaluate and Troubleshoot Model Responses**: 
+    * Measure response time and tokens consumed for each response
+    * Evaluate answer relevance and faithfullnes using [RAGAS](https://docs.ragas.io/en/stable/concepts/metrics/index.html)
+    * See the documents retrieved with their cosine similarity and the instructions passed to the model to troubleshoot incorrect responses
+    * To see detailed information for each request, see the traces in LangSmit 
+1. **Tweak your System Prompt**: Make small changes to your system prompt to improve model responses. **Note**: editor is very basic right now.
+1. **Load your documents**
 1. **Saved Queries**: Save commonly used queries to quickly run them without typing them every time.
-1. **Edit your System Prompt**: Tweak your system prompt to improve model responses.
 
-![ChatMate Preview](docs/chatmate.png)
 
 ### Installing Locally
 
