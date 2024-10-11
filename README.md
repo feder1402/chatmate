@@ -1,6 +1,13 @@
 # ChatMate
 
-**ChatMate** is a versatile chatbot sandbox client that can interact with multiple models.
+**ChatMate** is a versatile chatbot sandbox client that can interact with multiple models
+and provides useful information about the models responses.
+
+### Key Features:
+1. **Chose your AI Model**: ChatMate supports for multiple AI models from Anthropic, Google,
+ OpenAI, Meta (through Groq), etc. Additional models can be easily configured.
+1. **Saved Queries**: Save commonly used queries to quickly run them without typing them every time.
+1. **Edit your System Prompt**: Tweak your system prompt to improve model responses.
 
 ![ChatMate Preview](docs/chatmate.png)
 
