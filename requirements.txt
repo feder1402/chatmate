@@ -5,6 +5,7 @@ langchain_experimental==0.0.63
 langchain-openai==0.1.19
 langchain-anthropic==0.1.21
 langchain-google-genai
+langchain-groq
 langchain_chroma==0.1.2
 langchain-cli==0.0.26
 openai==1.37.1
